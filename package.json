@@ -1,0 +1,36 @@
+{
+  "name": "pym",
+  "version": "0.0.1",
+  "description": "Module-assistant to create systems based on plugins",
+  "main": "lib/pym.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint lib test && ./node_modules/.bin/jscs lib test",
+    "test": "npm run lint && ./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zxqfox/pym"
+  },
+  "keywords": [
+    "npm",
+    "plugin",
+    "architect"
+  ],
+  "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "bugs": {
+    "url": "https://github.com/zxqfox/pym/issues"
+  },
+  "dependencies": {
+    "ym": "0.1.x"
+  },
+  "devDependencies": {
+    "jscs": "1.6.x",
+    "jscs-jsdoc": "0.0.10",
+    "jshint": "~2.3.0",
+    "mocha": "~1.14.0"
+  }
+}
