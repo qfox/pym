@@ -1,0 +1,9 @@
+{
+  "name": "architect-imports-abc",
+  "version": "0.0.1",
+  "main": "index.js",
+  "plugin": {
+  	"consumes": ["a", "b", "c"],
+    "provides": ["imports-abc"]
+  }
+}

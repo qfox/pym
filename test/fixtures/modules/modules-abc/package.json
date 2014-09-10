@@ -1,0 +1,8 @@
+{
+  "name": "modules-abc",
+  "version": "0.0.1",
+  "main": "index.js",
+  "pym": {
+    "provides": ["a", "b", "c"]
+  }
+}

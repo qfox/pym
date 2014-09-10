@@ -1,36 +1,48 @@
 {
   "name": "pym",
   "version": "0.0.1",
+  "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
   "description": "Module-assistant to create systems based on plugins",
-  "main": "lib/pym.js",
-  "scripts": {
-    "lint": "./node_modules/.bin/jshint lib test && ./node_modules/.bin/jscs lib test",
-    "test": "npm run lint && ./node_modules/.bin/mocha"
-  },
+  "keywords": [
+    "plugin",
+    "pluggable",
+    "package",
+    "module",
+    "system",
+    "architect"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/zxqfox/pym"
   },
-  "keywords": [
-    "npm",
-    "plugin",
-    "architect"
-  ],
-  "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
-  "license": "MIT",
-  "engines": {
-    "node": ">= 0.10"
-  },
   "bugs": {
     "url": "https://github.com/zxqfox/pym/issues"
   },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "main": "lib/pym.js",
+  "files": [
+    "lib",
+    "LICENSE"
+  ],
   "dependencies": {
     "ym": "0.1.x"
   },
   "devDependencies": {
     "jscs": "1.6.x",
-    "jscs-jsdoc": "0.0.10",
-    "jshint": "~2.3.0",
+    "jscs-jsdoc": "0.0.12",
+    "jshint": "~2.5.5",
     "mocha": "~1.14.0"
-  }
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint lib test && ./node_modules/.bin/jscs lib test",
+    "test": "npm run lint && ./node_modules/.bin/mocha"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/zxqfox/pym/raw/master/LICENSE"
+    }
+  ]
 }

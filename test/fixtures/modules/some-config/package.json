@@ -1,0 +1,11 @@
+{
+  "name": "some-config",
+  "version": "0.0.1",
+  "description": "Simple config plugin",
+  "main": "index.js",
+  "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
+  "pym": {
+    "main": "index.ym.js",
+    "provides": ["config"]
+  }
+}

@@ -1,18 +1,18 @@
 {
-    "node": true,
-    "expr": true,
-    "curly": false,
-    "camelcase": true,
-    "eqeqeq": true,
-    "forin": false,
-    "immed": true,
-    "multistr": true,
-    "newcap": true,
-    "nonew": true,
-    "quotmark": false,
-    "undef": true,
-    "unused": false,
+    "node"    : true,
+    "mocha"   : true,
+
+    "expr"    : true,
+    "bitwise" : true,
+    "eqeqeq"  : true,
+    "forin"   : true,
+    "immed"   : true,
+    "noarg"   : true,
+    "undef"   : true,
+    "unused"  : true,
     "loopfunc": true,
     "trailing": true,
-    "boss": true
+
+    "maxlen"  : 120,
+    "boss"    : true
 }
