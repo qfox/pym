@@ -1,3 +1,7 @@
+/**
+ * Example of plugin
+ * @param {YM} ym
+ */
 module.exports = function (ym) {
     ym.define('a', function (provide) {
         provide('a');

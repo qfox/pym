@@ -30,13 +30,13 @@
     "ym": "0.1.x"
   },
   "devDependencies": {
-    "jscs": "1.6.x",
-    "jscs-jsdoc": "0.0.12",
-    "jshint": "~2.5.5",
-    "mocha": "~1.14.0"
+    "jscs": "1.8.x",
+    "jscs-jsdoc": "0.2.x",
+    "jshint": "~2.5.10",
+    "mocha": "~2.0.1"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/jshint lib test && ./node_modules/.bin/jscs lib test",
+    "lint": "jshint lib test && jscs lib test",
     "test": "npm run lint && ./node_modules/.bin/mocha"
   },
   "licenses": [

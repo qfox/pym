@@ -1,19 +1,23 @@
 {
-    "preset": "yandex",
+  "preset": "yandex",
 
-    "additionalRules": [
-        "node_modules/jscs-jsdoc/lib/rules/*.js"
-    ],
-    "jsDoc": {
-        "checkParamNames": true,
-        "checkRedundantParams": true,
-        "requireParamTypes": true,
-        "checkReturnTypes": true,
-        "requireReturnTypes": true,
-        "checkTypes": true,
-        "checkRedundantReturns": true,
-        "checkRedundantAccess": true,
-        "leadingUnderscoreAccess": "private",
-        "enforceExistence": true
-    }
+  "plugins": [
+    "jscs-jsdoc"
+  ],
+  "jsDoc": {
+    "checkAnnotations": {
+      "preset": "closurecompiler",
+      "extra": {"api": false, "test": true}
+    },
+    "checkParamNames": true,
+    "checkRedundantParams": true,
+    "requireParamTypes": true,
+    "checkReturnTypes": true,
+    "requireReturnTypes": true,
+    "checkTypes": true,
+    "checkRedundantReturns": true,
+    "checkRedundantAccess": true,
+    "leadingUnderscoreAccess": "private",
+    "enforceExistence": true
+  }
 }
