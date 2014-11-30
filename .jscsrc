@@ -14,7 +14,7 @@
     "requireParamTypes": true,
     "checkReturnTypes": true,
     "requireReturnTypes": true,
-    "checkTypes": true,
+    "checkTypes": "strictNativeCase",
     "checkRedundantReturns": true,
     "checkRedundantAccess": true,
     "leadingUnderscoreAccess": "private",
