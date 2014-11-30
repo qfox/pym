@@ -1,9 +1,5 @@
 # pym
 
-[![Build Status](https://secure.travis-ci.org/zxqfox/pym.svg?branch=master)](https://travis-ci.org/zxqfox/pym)
-[![NPM version](https://badge.fury.io/js/pym.png)](http://badge.fury.io/js/pym)
-[![Dependency Status](https://david-dm.org/zxqfox/pym.png)](https://david-dm.org/zxqfox/pym)
-
 Packaged YM-modules
 
 ## Что это и зачем?
