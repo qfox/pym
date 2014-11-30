@@ -30,22 +30,19 @@
     "ym": "0.1.x"
   },
   "devDependencies": {
-    "istanbul": "^0.3.2",
-    "istanbul-coveralls": "1.0.x",
     "jscs": "1.8.x",
     "jscs-jsdoc": "0.2.x",
     "jshint": "~2.5.10",
-    "mocha": "~2.0.1",
-    "mocha-istanbul": "*"
+    "mocha": "~2.0.1"
   },
   "scripts": {
+    "cov-deps": "npm i istanbul mocha-istanbul",
     "cov-clean": "rm -rf lib-cov; rm -rf html-report",
     "cov-build": "istanbul instrument --output lib-cov --no-compact --variable global.__coverage__ lib",
     "cov": "npm run cov-clean && npm run cov-build && PYM_COVER=1 mocha -R mocha-istanbul",
     "lint": "jshint lib test && jscs lib test",
     "test": "npm run lint && mocha",
-    "travis": "npm run test && npm run coveralls",
-    "coveralls": "istanbul cover ./node_modules/.bin/_mocha -- -R spec && istanbul-coveralls"
+    "travis": "npm run test"
   },
   "licenses": [
     {
