@@ -1,3 +1,8 @@
+/**
+ * Example of exporting module
+ * @param {YM} ym
+ * @param {Object} options
+ */
 module.exports = function (ym, options) {
     ym.define('config', function (provide) {
         provide({

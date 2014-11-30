@@ -9,3 +9,4 @@ lib-cov/
 coverage.html
 .DS_Store
 *.sublime*
+/html-report

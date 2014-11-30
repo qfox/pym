@@ -21,7 +21,7 @@
   "engines": {
     "node": ">= 0.10"
   },
-  "main": "lib/pym.js",
+  "main": "index.js",
   "files": [
     "lib",
     "LICENSE"
@@ -30,14 +30,22 @@
     "ym": "0.1.x"
   },
   "devDependencies": {
-    "jscs": "1.6.x",
-    "jscs-jsdoc": "0.0.12",
-    "jshint": "~2.5.5",
-    "mocha": "~1.14.0"
+    "istanbul": "^0.3.2",
+    "istanbul-coveralls": "1.0.x",
+    "jscs": "1.8.x",
+    "jscs-jsdoc": "0.2.x",
+    "jshint": "~2.5.10",
+    "mocha": "~2.0.1",
+    "mocha-istanbul": "*"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/jshint lib test && ./node_modules/.bin/jscs lib test",
-    "test": "npm run lint && ./node_modules/.bin/mocha"
+    "cov-clean": "rm -rf lib-cov; rm -rf html-report",
+    "cov-build": "istanbul instrument --output lib-cov --no-compact --variable global.__coverage__ lib",
+    "cov": "npm run cov-clean && npm run cov-build && PYM_COVER=1 mocha -R mocha-istanbul",
+    "lint": "jshint lib test && jscs lib test",
+    "test": "npm run lint && mocha",
+    "travis": "npm run test && npm run coveralls",
+    "coveralls": "istanbul cover ./node_modules/.bin/_mocha -- -R spec && istanbul-coveralls"
   },
   "licenses": [
     {
