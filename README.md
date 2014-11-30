@@ -1,8 +1,10 @@
 # pym
 
-[![Build Status](https://secure.travis-ci.org/zxqfox/pym.svg?branch=master)](https://travis-ci.org/zxqfox/pym)
-[![NPM version](https://badge.fury.io/js/pym.png)](http://badge.fury.io/js/pym)
-[![Dependency Status](https://david-dm.org/zxqfox/pym.png)](https://david-dm.org/zxqfox/pym)
+[![NPM version](https://img.shields.io/npm/v/pym.svg?style=flat)](https://www.npmjs.org/package/pym)
+[![Build Status](https://img.shields.io/travis/zxqfox/pym.svg?branch=master&style=flat)](https://travis-ci.org/zxqfox/pym)
+[![Coverage Status](https://img.shields.io/coveralls/zxqfox/pym.svg?style=flat)](https://coveralls.io/r/zxqfox/pym?branch=master)
+[![Dependency Status](https://img.shields.io/david/zxqfox/pym.svg?style=flat)](https://david-dm.org/zxqfox/pym)
+[![Dev Dependency Status](https://img.shields.io/david/dev/zxqfox/pym.svg?style=flat)](https://david-dm.org/zxqfox/pym)
 
 Packaged YM-modules
 
