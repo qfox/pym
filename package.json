@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "istanbul": "^0.3.2",
+    "istanbul-coveralls": "1.0.x",
     "jscs": "1.8.x",
     "jscs-jsdoc": "0.2.x",
     "jshint": "~2.5.10",
@@ -44,7 +45,7 @@
     "lint": "jshint lib test && jscs lib test",
     "test": "npm run lint && mocha",
     "travis": "npm run test && npm run coveralls",
-    "coveralls": ""
+    "coveralls": "istanbul cover ./node_modules/.bin/_mocha -- -R spec && istanbul-coveralls"
   },
   "licenses": [
     {
