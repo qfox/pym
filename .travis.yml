@@ -2,14 +2,13 @@ language: node_js
 
 node_js:
     - "0.10"
-    - "0.11"
-
-script: npm run travis
+    - "0.12"
+    - "4"
+    - "6"
 
 after_success:
   - |
-      if [ "${TRAVIS_NODE_VERSION}" == "0.10" ]; then
-        npm i istanbul istanbul-coveralls
-        istanbul cover --report lcovonly ./node_modules/.bin/_mocha
-        istanbul-coveralls && echo "Coverage data was sent to coveralls!"
+      if [ "${TRAVIS_NODE_VERSION}" == "4" ]; then
+        npm i coveralls
+        npm run coverage
       fi

@@ -23,6 +23,7 @@
   },
   "main": "index.js",
   "files": [
+    "index.js",
     "lib",
     "LICENSE"
   ],
@@ -30,24 +31,17 @@
     "ym": "0.1.x"
   },
   "devDependencies": {
-    "jscs": "1.8.x",
-    "jscs-jsdoc": "0.2.x",
+    "jscs": "^2.11.0",
+    "jscs-jsdoc": "^1.3.2",
     "jshint": "~2.5.10",
-    "mocha": "~2.0.1"
+    "mocha": "^3.1.0",
+    "nyc": "^8.3.0"
   },
   "scripts": {
-    "cov-deps": "npm i istanbul mocha-istanbul",
-    "cov-clean": "rm -rf lib-cov; rm -rf html-report",
-    "cov-build": "istanbul instrument --output lib-cov --no-compact --variable global.__coverage__ lib",
-    "cov": "npm run cov-clean && npm run cov-build && PYM_COVER=1 mocha -R mocha-istanbul",
     "lint": "jshint lib test && jscs lib test",
-    "test": "npm run lint && mocha",
-    "travis": "npm run test"
+    "pretest": "npm run lint",
+    "test": "nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/zxqfox/pym/raw/master/LICENSE"
-    }
-  ]
+  "license": "MIT"
 }

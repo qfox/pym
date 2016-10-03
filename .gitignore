@@ -10,3 +10,4 @@ coverage.html
 .DS_Store
 *.sublime*
 /html-report
+/.nyc_output
