@@ -31,8 +31,8 @@
     "ym": "0.1.x"
   },
   "devDependencies": {
-    "jscs": "1.8.x",
-    "jscs-jsdoc": "0.2.x",
+    "jscs": "^2.11.0",
+    "jscs-jsdoc": "^1.3.2",
     "jshint": "~2.5.10",
     "mocha": "^3.1.0",
     "nyc": "^8.3.0"
