@@ -1,6 +1,6 @@
 {
   "name": "pym",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Alexej Yaroshevich <zxqfox@gmail.com> (http://github.com/zxqfox)",
   "description": "Module-assistant to create systems based on plugins",
   "keywords": [
