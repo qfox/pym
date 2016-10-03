@@ -45,10 +45,5 @@
     "test": "npm run lint && mocha",
     "travis": "npm run test"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/zxqfox/pym/raw/master/LICENSE"
-    }
-  ]
+  "license": "MIT"
 }
